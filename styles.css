@@ -1,36 +1,48 @@
 /* Default style for the back-to-top button */
 #back-to-top {
-    display: none; /* Hidden by default */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #007BFF; /* Customize button color */
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    z-index: 1000;
-  }
-  
-  /* Visible class styling */
-  #back-to-top.visible {
-    display: block; /* Show button when visible */
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Optional hover effect */
-  #back-to-top:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Add animation for smoother appearance */
-  #back-to-top:not(.visible) {
-    opacity: 0;
-    transform: translateY(20px); /* Slide-in effect */
-  }
-  
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #007BFF; /* Customize button color */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Visible class styling */
+#back-to-top.visible {
+  display: block; /* Show button when visible */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional hover effect */
+#back-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Add animation for smoother appearance */
+#back-to-top:not(.visible) {
+  opacity: 0;
+  transform: translateY(20px); /* Slide-in effect */
+}
+
+/* Contact Section Icon Alignment */
+.contact-info p {
+  display: flex;
+  align-items: center;  /* Aligns icon and text vertically */
+  justify-content: center;  /* Centers both icon and text horizontally */
+  margin-bottom: 10px;  /* Optional: space between the items */
+}
+
+.contact-info i {
+  margin-right: 10px;  /* Adds space between the icon and the text */
+  font-size: 1.2em;  /* Optional: adjust icon size */
+}
